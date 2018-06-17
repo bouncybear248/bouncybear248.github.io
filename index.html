@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="smiley.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" >
+       var choice = null;
+    function makeChoice(value) {
+        choice = value;
+        $('#colCenter').fadeOut('slow');
+        $('#col'+value).fadeOut('slow', function() {
+             $('#thanks').fadeIn('slow')
+            setTimeout('location.reload(true);',5000);
+                                });
+        return false;
+    } 
+  </script>
+</head>
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12">
+        <div class="title">
+          <div id="how_washing">HOW WAS YOUR WASHING ?</div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="begin">
+      <div class="col-3" id="col1">
+        <a href="#" onclick="makeChoice(0)" id="link0"><img src="./smile.png" class="img-fluid" alt="good" /></a>
+      </div>
+      <div class="col-3" id="colCenter">
+        
+      </div>
+      <div class="col-3" id="col0">
+        <a href="#" onclick="makeChoice(1)" id="link1"><img src="./sad.png" class="img-fluid" alt="bad"/></a> 
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4 thanks-container">
+        <div class="thanks" id="thanks">
+          Thank You !
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="title">
+          <img src="./logo.png" alt="smixin" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>

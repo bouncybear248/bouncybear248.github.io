@@ -1,0 +1,62 @@
+body {
+  width:1023px;
+  height:598px;
+  background: (rgb(21, 77, 177), rgb(35, 105, 163), rgb(54, 139, 210));
+  background: -webkit-gradient(linear, center top, center bottom,
+        from(rgb(21, 77, 177)), color-stop(50%,rgb(35, 105, 163)), to(rgb(54, 139, 210)));
+  background-size:1023px 598px;
+  background-repeat: no-repeat;
+
+  
+}
+body .title {
+  margin: 50px;
+  font-size: 2.4em;
+}
+body .title #how_washing {
+    font-family: sans-serif;
+    color: white;
+}
+body .thanks-container {
+  height: 4em;
+  line-height: 4em;
+}
+body .thanks-container .thanks {
+  display: none;
+  font-size: 2em;
+}
+body .text-center {
+    text-align:center!important;
+}
+img {
+    vertical-align: center;
+    max-width:210px;
+    width: 100%;
+    min-width:90px;
+    height: auto;
+}
+body .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:-15px;
+    margin-left: -15px;
+}
+body .col-3 {
+    flex: 0 0 25%;
+    max-width:25%;
+}
+body col-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+.justify-content-center{
+    justify-content: center!important;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width:100%;
+}
+body #thanks{
+    font-family: sans-serif;
+    color: white;
+}
