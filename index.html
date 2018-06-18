@@ -9,17 +9,15 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="jquery-3.3.1.min.js">
-        function faceChoice(value) {
-            if(value ===0) {
-                $('.col-3').fadeOut(1200);
-                }
-            else {
-                $('.col-3').fadeOut(1200);
-                }
-          return false;
-        }
+  <script src = "jquery-3.3.1.min.js">
+      $('.img-fluid').on('click', function() {
+          S(this).stop;
+          $(this).animate({
+              verticalAlign: "center"
+          });
+      });
   </script>
+    
 </head>
 <body>
   <div class="container text-center">
@@ -51,11 +49,10 @@
     <div class="row justify-content-center">
       <div class="col-4">
         <div class="title">
-          <img src="./logo.png" alt="smixin" class="img-fluid" />
+          <img src="./logo.png" alt="smixin"  />
         </div>
       </div>
     </div>
   </div>
-    
 </body>
 </html>
