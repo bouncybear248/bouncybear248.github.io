@@ -10,11 +10,25 @@
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
   <script src = "jquery-3.3.1.min.js">
-      $('.img-fluid').on('click', function() {
-          S(this).stop;
+      $(document).ready(function() {
+         $('#col1').on('click', function() {
+          $('#colCenter').fadeOut('slow');
+          $('#col0').fadeOut('slow', function() { $('#thanks').fadeIn('slow')});
+          $(this).stop;
           $(this).animate({
               verticalAlign: "center"
           });
+          return false;
+      });
+      $('#col0').on('click', function() {
+          $('#colCenter').fadeOut('slow');
+          $('#col1').fadeOut('slow', function() { $('#thanks').fadeIn('slow')});
+          $(this).stop;
+          $(this).animate({
+              verticalAlign: "center"
+          });
+          return false;
+      }); 
       });
   </script>
     
@@ -30,13 +44,13 @@
     </div>
     <div class="row justify-content-center" id="begin">
       <div class="col-3" id="col1">
-        <a href="#" onclick="faceChoice(0)" id="link0"><img src="./smile.png" class="img-fluid" alt="good" /></a>
+        <a href="#" id="link0"><img src="./smile.png" class="img-fluid" alt="good" /></a>
       </div>
       <div class="col-3" id="colCenter">
         
       </div>
       <div class="col-3" id="col0">
-    <a href="#" onclick="faceChoice(1)" id="link1"><img src="./sad.png" class="img-fluid" alt="bad"/></a> 
+    <a href="#" id="link1"><img src="./sad.png" class="img-fluid" alt="bad"/></a> 
       </div>
     </div>
     <div class="row justify-content-center">
