@@ -4,11 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="smiley.css">
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
-  <script src="node_modules/bootstrap/js/bootstrap.min.js"></script>  
 </head>
 <body>
   <div class="container text-center">
@@ -21,13 +17,13 @@
     </div>
     <div class="row justify-content-center" id="begin">
       <div class="col-3" id="col1">
-        <a href="#" onclick="faceChoice(0)" id="link0"><img src="./smile.png" class="img-fluid" alt="good" /></a>
+        <a href="#"  id="link0"><img src="./smile.png" class="img-fluid" id="face_h" alt="good" /></a>
       </div>
       <div class="col-3" id="colCenter">
         
       </div>
       <div class="col-3" id="col0">
-    <a href="#" onclick="faceChoice(1)" id="link1"><img src="./sad.png" class="img-fluid" alt="bad"/></a> 
+    <a href="#"  id="link1"><img src="./sad.png" class="img-fluid" id="face_s" alt="bad"/></a> 
       </div>
     </div>
     <div class="row justify-content-center">
@@ -45,13 +41,10 @@
       </div>
     </div>
   </div>
-    <script type = "text/javascript" src = "jquery-3.3.1.min.js">
-      $(document).ready(function() {
-         var choice = null;
-          function faceChoice(face_num){
-              $('#thanks').fadeIn('slow');
-          }
-      });
-  </script>
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src='main.js'></script>
 </body>
 </html>
